@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Successful</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            padding: 40px;
+            text-align: center;
+        }
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+        .token {
+            word-break: break-word;
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: monospace;
+            text-align: left;
+            margin-top: 15px;
+        }
+        h1 {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>✅ Registration Successful!</h1>
+        <p>Your JWT token is shown below. Please keep it safe:</p>
+        <div class="token">
+            {{ token }}
+        </div>
+         <div>
+            <a href="/logout" class="logout-btn">Log Out</a>
+        </div>
+    </div>
+</body>
+</html>

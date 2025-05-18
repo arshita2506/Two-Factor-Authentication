@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+</head>
+<body>
+    <h2>Enter your password to continue</h2>
+    <form method="POST" action="/auto-login">
+        <input type="hidden" name="email" value="{{ email }}">
+        Password: <input type="password" name="password" required><br>
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>
